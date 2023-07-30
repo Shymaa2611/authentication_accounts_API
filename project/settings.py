@@ -23,10 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-g0x=u-6xd-#%^nha5wx)!@2h6ou09b3z2d9^34um%rbd^+($tb'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG =False
 
-#ALLOWED_HOSTS = ['localhost','accountsAPI.pythonanywhere.com']
-ALLOWED_HOSTS=[]
+ALLOWED_HOSTS = ['localhost','accountsAuthentication.pythonanywhere.com']
+#ALLOWED_HOSTS=[]
 
 # Application definition
 CORS_ORIGIN_ALLOW_ALL = True
@@ -60,7 +60,7 @@ ROOT_URLCONF = 'project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS':[],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
